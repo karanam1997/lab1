@@ -41,7 +41,7 @@ class NeuronL:
         self.bias = bias
         self.neurons = []
         for i in range(n_num):
-            self.neurons.append(Neuron(self.bias))
+            self.neurons.append(Neuron(self.bias[i]))
             
     def forward_cycle(self, inputs):
         l_out = np.zeros(len(self.neurons))
